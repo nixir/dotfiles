@@ -42,7 +42,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -200,6 +200,8 @@ exec --no-startup-id ~/.fehbg
 
 #For Annontation 
 exec --no-startup-id dunst
+
+exec --no-startup-id ssh-agent
 
 #Splitmode -> border
 for_window [class="^.*"] border pixel 1
