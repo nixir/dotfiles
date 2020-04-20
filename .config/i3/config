@@ -205,3 +205,6 @@ exec --no-startup-id ssh-agent
 
 #Splitmode -> border
 for_window [class="^.*"] border pixel 1
+
+#PrintScreen
+bindsym Print exec --no-startup-id scrot -e 'mv $f ~/screenshots/' 
